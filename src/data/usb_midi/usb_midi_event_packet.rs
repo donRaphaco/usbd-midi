@@ -3,7 +3,8 @@ use crate::data::usb_midi::cable_number::CableNumber;
 use crate::data::usb_midi::code_index_number::CodeIndexNumber;
 use crate::midi_types::MidiMessage;
 use core::convert::TryFrom;
-use midi_convert::{MidiParseError, MidiRenderSlice, MidiTryParseSlice};
+use midi_convert::parse::{MidiParseError, MidiTryParseSlice};
+use midi_convert::render_slice::MidiRenderSlice;
 
 /// A packet that communicates with the host
 /// Currently supported is sending the specified normal midi
